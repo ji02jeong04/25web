@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정화가 추천하는 오티티</title>
+  <link rel="stylesheet" href="../css/mystyle.css">
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 60%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+  <svg height="120" width="100%">
+    <!-- <defs> 요소는 그래픽 객체를 정의, <def> 요소 내에서 만든 객체는 출력되는 것은 아님
+         나중에 사용하려면 fill 속성에 참조 연결하거나 <use> 요소를 이용해야함 
+         <def> 요소 내에 선형그레디언트 정의 -->
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(0,255,255);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <rect fill="url(#grad1)" x="0" y="0" width="100%" height="120" />
+    <text fill="#cccccc" font-size="60" font-family="Verdana" x="50" y="80">김정화의 홈페이지</text>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+    
+  <ul>
+    <li><a class="active" href="https://ji02jeong04.github.io/25web/">홈</a></li>
+    <li><a href="./drama.html">드라마</a></li>
+    <li><a href="./movie.html">영화</a></li>
+    <li><a href="./animation.html">애니메이션</a></li>
+    <li class="dropdown">
+      <a href="./ott.html" class="dropbtn">오티티</a>
+      <div class="dropdown-content" >
+        <a href="https://www.tving.com" target="_blank">티빙</a>
+        <a href="https://www.netflix.com" target="_blank">넷플릭스</a>
+        <a href="http://www.wavve.com" target="_blank">웨이브</a>
+      </div>
+    </li>
+  </ul>
+
+  <h2>오티티 소개</h2>
+
+  <table>
+    <tr>
+        <th>ott</th>
+        <th>url</th>
+        <th>볼 수 있는 영상</th>
+    </tr>
+    <tr>
+      <td>tving</td>
+      <td><a href="http://www.tving.com" target="_blank"><img src="#" alt="tving" style=""></a></td>
+      <td>-어는 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아</td>
+    </tr>
+    <tr>
+        <td>netflix</td>
+        <td><a href="http://www.netflix.com" target="_blank"><img src="#" alt="netflix" style=""></a></td>
+        <td>-그 해 우리는<br>-어느 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아</td>
+      </tr>
+      <tr>
+        <td>wavve</td>
+        <td><a href="http://www.wavve.com" target="_blank"><img src="#" alt="wavve" style=""></a></td>
+        <td>-그 해 우리는<br>-어쩌다 발견한 하루<br>-마녀<br>-하이큐<br>-나의 히어로 아카데미아</td>
+      </tr>
+  </table>  
+
+</body>
+</html>
