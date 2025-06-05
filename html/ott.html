@@ -9,17 +9,22 @@
     table {
       font-family: arial, sans-serif;
       border-collapse: collapse;
-      width: 60%;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      font-size: 25px;
+      line-height: 1.7;
     }
     
     td, th {
-      border: 1px solid #dddddd;
+      border: 1px solid white;
       text-align: left;
       padding: 8px;
+      text-align: center;
     }
     
-    tr:nth-child(even) {
-      background-color: #dddddd;
+    tr {
+        border: 1px solid black;
     }
   </style>
 </head>
@@ -35,47 +40,46 @@
       </linearGradient>
     </defs>
     <rect fill="url(#grad1)" x="0" y="0" width="100%" height="120" />
-    <text fill="#cccccc" font-size="60" font-family="Verdana" x="50" y="80">김정화의 홈페이지</text>
+    <text fill="#cccccc" font-size="60" font-family="Verdana" x="50" y="80">JH's 인생작 TOP 6</text>
     Sorry, your browser does not support inline SVG.
   </svg>
     
   <ul>
-    <li><a class="active" href="https://ji02jeong04.github.io/25web/">홈</a></li>
-    <li><a href="./drama.html">드라마</a></li>
-    <li><a href="./movie.html">영화</a></li>
-    <li><a href="./animation.html">애니메이션</a></li>
+    <li><a class="active" href="https://ji02jeong04.github.io/25web/">HOME</a></li>
+    <li><a href="./drama.html">DRAMA</a></li>
+    <li><a href="./movie.html">MOVIE</a></li>
+    <li><a href="./animation.html">ANIMATION</a></li>
     <li class="dropdown">
-      <a href="./ott.html" class="dropbtn">오티티</a>
+      <a href="./ott.html" class="dropbtn">OTT</a>
       <div class="dropdown-content" >
-        <a href="https://www.tving.com" target="_blank">티빙</a>
-        <a href="https://www.netflix.com" target="_blank">넷플릭스</a>
-        <a href="http://www.wavve.com" target="_blank">웨이브</a>
+        <a href="https://www.tving.com" target="_blank">tving</a>
+        <a href="https://www.netflix.com" target="_blank">netflix</a>
+        <a href="http://www.wavve.com" target="_blank">wavve</a>
       </div>
     </li>
   </ul>
 
-  <h2>오티티 소개</h2>
 
   <table>
     <tr>
-        <th>ott</th>
+        <th>OTT</th>
         <th>url</th>
-        <th>볼 수 있는 영상</th>
+        <th style="text-align: left;">볼 수 있는 영상</th>
     </tr>
     <tr>
       <td>tving</td>
-      <td><a href="http://www.tving.com" target="_blank"><img src="#" alt="tving" style=""></a></td>
-      <td>-어는 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아</td>
+      <td><a href="http://www.tving.com" target="_blank"><img src="../image/tving.jpeg" alt="tving" style="width: 160px; height: 160px;"></a></td>
+      <td style="text-align: left; font-size: 20px;">-어는 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아<br></td>
     </tr>
     <tr>
         <td>netflix</td>
-        <td><a href="http://www.netflix.com" target="_blank"><img src="#" alt="netflix" style=""></a></td>
-        <td>-그 해 우리는<br>-어느 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아</td>
+        <td><a href="http://www.netflix.com" target="_blank"><img src="../image/netflix.jpeg" alt="netflix" style="width: 160px; height: 160px;"></a></td>
+        <td style="text-align: left; font-size: 20px;">-그 해 우리는<br>-어느 날 우리집 현관으로 멸망이 들어왔다<br>-하이큐<br>-나의 히어로 아카데미아</td>
       </tr>
       <tr>
         <td>wavve</td>
-        <td><a href="http://www.wavve.com" target="_blank"><img src="#" alt="wavve" style=""></a></td>
-        <td>-그 해 우리는<br>-어쩌다 발견한 하루<br>-마녀<br>-하이큐<br>-나의 히어로 아카데미아</td>
+        <td><a href="http://www.wavve.com" target="_blank"><img src="../image/wavve.jpeg" alt="wavve" style="width: 160px; height: 160px;"></a></td>
+        <td style="text-align: left; font-size: 20px;">-그 해 우리는<br>-어쩌다 발견한 하루<br>-마녀 (개별구매)<br>-하이큐<br>-나의 히어로 아카데미아</td>
       </tr>
   </table>  
 

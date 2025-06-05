@@ -2,12 +2,15 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: visible;  
+  height: auto;
+      
+  overflow: visible;   
+   
   /* 드롭다운메뉴가 확장될 때 메뉴 공간이 부족하여 오버플로우 발생
      overflow: visible; 은 오버클로우되는 콘텐츠를 잘라내지 않고 
      영역 범위 밖까지 콘텐츠를 출력함
      overflow: hidden은 오버클로우되는 콘텐츠를 잘라냄. */
-  background-color: #ffaef7;
+  background-color: #fab0f0;
   position: sticky;
   top:0px;
   /* position: sticky는 미리 정의한 위치에 도달하기 전에는 
@@ -23,6 +26,8 @@ ul {
 li {
   /* float: left; */
   display: inline-block;
+  height: auto;
+  
   /* 가로방향으로 메뉴를 만들기 위해 두가지 방법 모두 사용 가능
      float: left;  => li항목을 float(부유)시키고 왼쪽부터 차례로 배치 
      display: inline-block; => 기본적으로 li는 display: block 요소임
@@ -34,6 +39,8 @@ li {
 
 li a, .dropbtn {
   display: inline-block;
+  height: auto;
+
   /* a 요소와 .dropbtn(이것도 a 요소임)은 기본적으로 display: inline 요소임
      inline 요소는 block 요소와 달리 콘텐츠의 크기만큼만 영역을 차지함
      당연히 width, height, padding, margin 적용하지 못함. 
@@ -117,3 +124,50 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block; /* 마우스 오버시 드롭다운 메뉴가 보이도록 설정 */
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: sans-serif;
+  overflow: visible;
+}
+
+.layout {
+  display: flex; /* 수평 배치 */
+}
+
+aside {
+  width: 450px;
+  background-color: white;
+  height: calc(100% - 48px); /* 전체 높이 */
+  position: sticky;
+  top: 48px;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  display: block;
+}
+
+aside a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+aside a:hover {
+  background-color: white;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
